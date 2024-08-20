@@ -62,15 +62,15 @@
 - Media:
   - Navidrome 1:
       icon: navidrome
-      href: {{HOMEPAGE_VAR_NAVIDROME_URL}}
+      href: {{HOMEPAGE_VAR_NAVIDROME1_URL}}
       description: Music from 2015 and earlier
   - Navidrome 2:
       icon: navidrome
-      href: {{HOMEPAGE_VAR_NAVIDROME_URL}}
+      href: {{HOMEPAGE_VAR_NAVIDROME2_URL}}
       description: Electronic music
   - Navidrome 3:
       icon: navidrome
-      href: {{HOMEPAGE_VAR_NAVIDROME_URL}}
+      href: {{HOMEPAGE_VAR_NAVIDROME3_URL}}
       description: New and classic music
   - ErsatzTV:
       icon: ersatztv
@@ -159,4 +159,4 @@
       href: {{HOMEPAGE_VAR_PROMETHEUS_URL}}
   - Uptime Kuma: 
       icon: uptime-kuma
-      href: {{HOMEPAGE_VAR_UPTIME_URL}}
+      href: {{HOMEPAGE_VAR_UPTIME_KUMA_URL}}
