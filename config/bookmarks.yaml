@@ -1,0 +1,66 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/bookmark
+
+- Communication:
+  - Proton Mail:
+    - abbr: PM
+      href: https://mail.proton.me/
+  - GMail:
+    - abbr: GM
+      href: https://mail.google.com/
+  - Outlook:
+    - abbr: MO
+      href: https://outlook.com/
+
+- Entertainment:
+  - YouTube:
+    - abbr: YT
+      href: https://youtube.com/
+  - Spotify:
+    - abbr: SP
+      href: https://spotify.com/
+  - NCS:
+    - abbr: NCS
+      href: https://ncs.io/music
+  - Monstercat Player:
+    - abbr: MC
+      href: https://player.monstercat.app/
+
+- Commerce:
+  - Shopee:
+    - abbr: SHP
+      href: https://shopee.ph/
+  - Lazada:
+    - abbr: LZD
+      href: https://lazada.com.ph/
+  - Amazon:
+    - abbr: AMZ
+      href: https://amazon.com/
+  - Facebook Marketplace:
+    - abbr: FBM
+      href: https://facebook.com/marketplace
+  - AliExpress:
+    - abbr: ALX
+      href: https://aliexpress.com/
+
+- Reddit:
+  - Home:
+    - href: https://reddit.com/
+      icon: si-reddit-#ffffff  
+  - Homelab:
+    - href: https://reddit.com/r/homelab
+      icon: si-reddit-#ffffff
+      description: servers, cables, and series of tubes.
+  - Home Assistant:
+    - href: https://reddit.com/r/homeassistant
+      icon: si-reddit-#ffffff
+      description: local smart home.
+  - Hermitcraft:
+    - href: https://reddit.com/r/hermitcraft
+      icon: si-reddit-#ffffff
+      description: chuffed to bits.
+  - Smosh:
+    - href: https://reddit.com/r/smosh
+      icon: si-reddit-#ffffff
+      description: shut up.

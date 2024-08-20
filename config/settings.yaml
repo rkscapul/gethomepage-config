@@ -1,0 +1,46 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/settings
+
+title: home • {{HOMEPAGE_VAR_TITLE}}
+background: 
+  image: https://images.unsplash.com/photo-1586334334619-d19a3c3efa3e?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+  brightness: 50
+  opacity: 50
+color: neutral
+headerStyle: clean
+target: _self
+cardBlur: sm
+
+providers:
+  openweathermap: openweathermapapikey
+  weatherapi: weatherapiapikey
+
+layout:
+  Home:
+    #tab: Main
+    style: column
+  Media:
+    #tab: Main
+    style: column
+  The Network:
+    #tab: Main
+    style: column
+  What Is Happening Today:
+    #tab: Main
+    style: row
+    columns: 2
+    header: false
+    useEqualHeights: true
+  Monitoring 1:
+    #tab: Main
+    style: column
+  Monitoring 2:
+    #tab: Main
+    style: column
+  Servers:
+    #tab: Main
+    style: column
+  # Tab Management under development
+  # Consoles:
+  #   tab: Cockpit Management

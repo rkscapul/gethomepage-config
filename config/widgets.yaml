@@ -1,0 +1,14 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/service-widgets
+- logo:
+- greeting:
+    class: online-text
+    text_size: md
+    text: {{HOMEPAGE_VAR_TITLE}}
+- datetime:
+    text_size: md
+    format:
+      timeStyle: short
+      hour12: false
+      dateStyle: short

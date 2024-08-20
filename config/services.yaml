@@ -1,0 +1,162 @@
+---
+# For configuration options and examples, please see:
+# https://gethomepage.dev/latest/configs/services
+
+- What Is Happening Today:
+  - Calendar:
+      showName: false
+      widget:
+        type: calendar
+        firstDayInWeek: sunday
+        view: monthly
+        integrations:
+          - type: ical
+            url: {{HOMEPAGE_VAR_CALENDAR_PHI_NON_WORKING_DAYS}}
+            name: Non-working Days
+            color: red
+          - type: ical
+            url: {{HOMEPAGE_VAR_CALENDAR_PHI_HOLIDAYS}}
+            name: Regular Holidays
+            color: blue
+          - type: ical
+            url: {{HOMEPAGE_VAR_CALENDAR_WORK_EVENTS}}
+            name: Work
+            color: orange
+  - Agenda:
+      showName: false
+      widget:
+        type: calendar
+        view: agenda
+        integrations:
+          - type: ical
+            url: {{HOMEPAGE_VAR_CALENDAR_PHI_NON_WORKING_DAYS}}
+            name: Non-working Days
+            color: red
+          - type: ical
+            url: {{HOMEPAGE_VAR_CALENDAR_PHI_HOLIDAYS}}
+            name: Regular Holidays
+            color: blue
+          - type: ical
+            url: {{HOMEPAGE_VAR_CALENDAR_WORK_EVENTS}}
+            name: Work
+            color: orange
+
+- Home:
+  - Home Assistant:
+      icon: home-assistant
+      href: {{HOMEPAGE_VAR_HASS_URL}}
+      description: Local smart home
+  - AgentDVR:
+      icon: ispy
+      href: {{HOMEPAGE_VAR_LIVE_ADVR_URL}}
+      description: Scheduled recording • 00:00 - 06:00
+  - Pterodactyl:
+      icon: pterodactyl
+      href: {{HOMEPAGE_VAR_PTERODACYL_URL}}
+      description: Unlimited games (well, it depends...)
+  - Gitea:
+      icon: gitea
+      href: {{HOMEPAGE_VAR_GITEA_URL}}
+      description: Wait I can self-host GitHub?
+
+- Media:
+  - Navidrome 1:
+      icon: navidrome
+      href: {{HOMEPAGE_VAR_NAVIDROME_URL}}
+      description: Music from 2015 and earlier
+  - Navidrome 2:
+      icon: navidrome
+      href: {{HOMEPAGE_VAR_NAVIDROME_URL}}
+      description: Electronic music
+  - Navidrome 3:
+      icon: navidrome
+      href: {{HOMEPAGE_VAR_NAVIDROME_URL}}
+      description: New and classic music
+  - ErsatzTV:
+      icon: ersatztv
+      href: {{HOMEPAGE_VAR_ERSATZTV_URL}}
+  - MeTube:
+      icon: metube
+      href: {{HOMEPAGE_VAR_YTDL_URL}}
+  - Music Assistant:
+      icon: mdi-music-box-multiple-#ffffff
+      href: {{HOMEPAGE_VAR_MASS_URL}}
+
+- Servers:
+  - Deepslate:
+      icon: proxmox
+      href: {{HOMEPAGE_VAR_PVE1_URL}}
+      description: Proxmox - Core
+  - Calcite:
+      icon: proxmox
+      href: {{HOMEPAGE_VAR_PVE2_URL}}
+      description: Proxmox - Non-core
+  - Netherrack:
+      icon: proxmox
+      href: {{HOMEPAGE_VAR_PVE3_URL}}
+      description: Proxmox - Non-core
+
+- The Network:
+  - OPNsense:
+      icon: opnsense
+      href: {{HOMEPAGE_VAR_OPNSENSE_URL}}
+      description: Primary router settings
+      widget:
+        type: opnsense
+        url: {{HOMEPAGE_VAR_OPNSENSE_URL}}
+        username: {{HOMEPAGE_VAR_OPNSENSE_KEY}}
+        password: {{HOMEPAGE_VAR_OPNSENSE_PASS}}
+  # - Traefik:
+  #     icon: traefik
+  #     href: {{HOMEPAGE_VAR_TRAEFIK_URL}}
+  #     description: Proxy matters
+  #     widget:
+  #       type: traefik
+  #       url: {{HOMEPAGE_VAR_TRAEFIK_URL}}
+  - TP-Link Omada Software Controller:
+      icon: omada
+      href: {{HOMEPAGE_VAR_OMADA_SDN_URL}}
+      description: The Rift
+  - TP-Link Omada ER605:
+      icon: tp-link
+      href: {{HOMEPAGE_VAR_OMADA_ROUTER_URL}}
+      description: Backup router settings
+
+- Monitoring 1:
+  - AdGuard Home 1:
+      icon: adguard-home
+      href: {{HOMEPAGE_VAR_ADG1_URL}}
+      description: DNS ad-blocker
+      widget:
+        type: adguard
+        url: {{HOMEPAGE_VAR_ADG1_URL}}
+        username: {{HOMEPAGE_VAR_ADG1_USER}}
+        password: {{HOMEPAGE_VAR_ADG1_PASS}}
+  - AdGuard Home 2:
+      icon: adguard-home
+      href: {{HOMEPAGE_VAR_ADG2_URL}}
+      description: DNS ad-blocker
+      widget:
+        type: adguard
+        url: {{HOMEPAGE_VAR_ADG2_URL}}
+        username: {{HOMEPAGE_VAR_ADG2_USER}}
+        password: {{HOMEPAGE_VAR_ADG2_PASS}}
+  - AdGuard Home 3:
+      icon: adguard-home
+      href: {{HOMEPAGE_VAR_ADG3_URL}}
+      description: DNS ad-blocker - Source of truth
+      widget:
+        type: adguard
+        url: {{HOMEPAGE_VAR_ADG3_URL}}
+        username: {{HOMEPAGE_VAR_ADG3_USER}}
+        password: {{HOMEPAGE_VAR_ADG3_PASS}}
+- Monitoring 2:
+  - Grafana:
+      icon: grafana
+      href: {{HOMEPAGE_VAR_GRAFANA_URL}}
+  - Prometheus:
+      icon: prometheus
+      href: {{HOMEPAGE_VAR_PROMETHEUS_URL}}
+  - Uptime Kuma: 
+      icon: uptime-kuma
+      href: {{HOMEPAGE_VAR_UPTIME_URL}}
