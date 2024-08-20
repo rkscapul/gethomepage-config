@@ -52,7 +52,7 @@
       description: Scheduled recording • 00:00 - 06:00
   - Pterodactyl:
       icon: pterodactyl
-      href: {{HOMEPAGE_VAR_PTERODACYL_URL}}
+      href: {{HOMEPAGE_VAR_PTERODACTYL_URL}}
       description: Unlimited games (well, it depends...)
   - Gitea:
       icon: gitea
