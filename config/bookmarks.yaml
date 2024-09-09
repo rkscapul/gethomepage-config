@@ -4,14 +4,20 @@
 
 - Communication:
   - Proton Mail:
-    - abbr: PM
+    - icon: si-protonmail-#ffffff
       href: https://mail.proton.me/
   - GMail:
-    - abbr: GM
+    - icon: si-gmail-#ffffff
       href: https://mail.google.com/
   - Outlook:
-    - abbr: MO
+    - icon: mdi-email-#ffffff
       href: https://outlook.com/
+  - Discord:
+    - icon: si-discord-#ffffff
+      href: https://app.discord.com/
+  - Facebook Messenger:
+    - icon: si-messenger-#ffffff
+      href: https://messenger.com/
 
 - Entertainment:
   - YouTube:
